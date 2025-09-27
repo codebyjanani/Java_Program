@@ -1,0 +1,8 @@
+import java.util.*;//for using all func in util use '*'
+public class Main{
+   public static void main(String [] args){
+       Scanner scan = new Scanner(System.in);
+       char str  = scan.next().charAt(0);
+       System.out.println(str);
+  }
+}
