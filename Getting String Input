@@ -1,0 +1,8 @@
+import java.util.*;//for using all func in util use '*'
+public class Main{
+   public static void main(String [] args){
+       Scanner scan = new Scanner(System.in);
+       String str  = scan.nextLine(); //if we use string the output will be displayed only till the space.
+       System.out.println(str);
+   }
+}
