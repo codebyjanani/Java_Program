@@ -1,0 +1,11 @@
+import java.util.*;//for using all func in util use '*'
+public class Main{
+   public static void main(String [] args){
+       Scanner scan = new Scanner(System.in);
+       System.out.println("Enter a value");
+       int a = scan.nextInt();
+       System.out.println("Enter b value");
+       int b = scan.nextInt();
+       System.out.println("A value is "+a+" "+"B value is "+b);
+   }
+}
