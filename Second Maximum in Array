@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println();
+        int n = sc.nextInt();
+        int[] array = new int[n];
+        System.out.println(n);
+        for (int i = 0; i < n; i++) {
+            array[i] = sc.nextInt();
+        }
+        int result = findSecondLargest(array);
+        if (result == -1) {
+            System.out.println("No second largest element found.");
+        } else {
+            System.out.println(result);
+        }
+        sc.close();
+    }
+    public static int findSecondLargest(int[] arr) {
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+        for (int num : arr) {
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            } else if (num > secondLargest && num != largest) {
+                secondLargest = num;
+            }
+        }
+        return secondLargest == Integer.MIN_VALUE ? -1 : secondLargest;
+    }
+}
