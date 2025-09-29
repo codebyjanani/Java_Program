@@ -14,7 +14,7 @@ public class Main
 		    arr[i+1]=temp;
 		}
 		for(int x:arr) {
-		    System.out.println(x+" ");
+		    System.out.print(x+" ");
 		}    
 		
 	}
