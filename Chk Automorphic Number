@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int n = sc.nextInt();
+	    if((n*n)%100==n||((n*n)%10==n)){
+	        System.out.println("Automorphic Number");
+	    }
+	    else{
+	        System.out.println("Not Automorphic Number");
+	    }
+		
+	}
+}
