@@ -1,0 +1,14 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        System.out.println("Enter the 1st Number: ");
+        Scanner sc = new Scanner(System.in);
+        int s = sc.nextInt();
+        System.out.println("Enter the 2nd Number: ");
+        Scanner sca = new Scanner(System.in);
+        int b = sca.nextInt();
+        System.out.println("Sum Of 2 Numbers: "+(s+b));
+        
+    }
+
+}
